@@ -1,6 +1,6 @@
 # celery-example
 
-该项目包含了关于 Celery 的三个 Demo，其中`notify_friends_exp`和`favorite_book_exp`来自文章 [利用 Celery 构建 Web 服务的后台任务调度模块](https://www.ibm.com/developerworks/cn/opensource/os-cn-celery-web-service/index.html)，
+该项目包含了关于 Celery 的三个 Demo，其中 `notify_friends_exp` 和 `favorite_book_exp` 参考文章 [利用 Celery 构建 Web 服务的后台任务调度模块](https://www.ibm.com/developerworks/cn/opensource/os-cn-celery-web-service/index.html)，
 而`register_module`包含了一个 Web 的注册案例，旨在对比传统同步的注册与使用Celery任务调度下的注册的性能差异。
 
 ## 性能测试
