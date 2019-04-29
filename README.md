@@ -23,7 +23,7 @@
 
 其次再来看看TP95这个指标，要注意的是，这里的值并不具有实际意义：
 
-![](http://blog.default.nanwulife.com/%E4%BC%A0%E7%BB%9F%E6%8A%98%E7%BA%BF%E5%9B%BE.png)
+![](http://blog.default.nanwulife.com/%E4%BC%A0%E7%BB%9F%E6%8A%98%E7%BA%BF%E5%9B%BE%20%281%29.png)
 
 ## 使用方式
 
