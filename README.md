@@ -18,7 +18,12 @@
 `register_module`使用 Flask 作为 Web 框架，选用 RabbitMQ 作为 Celery 的 Broker，其中`register`与`celery_register`接口分别展示了传统同步的注册方式与使用 Celery 的注册方式，
 相关步骤的耗时都以`time.sleep`的方式模拟。以下是两种实现方式的性能测试对比，测试并不十分严谨，旨在说明使用异步方式对于系统吞吐量上的提高：
 
-![](http://blog.default.nanwulife.com/%E6%9C%AA%E5%91%BD%E5%90%8D.png)
+首先是QPS上的对比，横坐标轴为并发数：
+![](http://blog.default.nanwulife.com/%E4%BC%A0%E7%BB%9F%E6%8A%98%E7%BA%BF%E5%9B%BE.png)
+
+其次再来看看TP95这个指标，要注意的是，这里的值并不具有实际意义：
+
+![](http://blog.default.nanwulife.com/%E4%BC%A0%E7%BB%9F%E6%8A%98%E7%BA%BF%E5%9B%BE.png)
 
 ## 使用方式
 
