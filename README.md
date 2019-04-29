@@ -1,7 +1,7 @@
 # celery-example
 
 该项目包含了关于 Celery 的三个 Demo，其中 `notify_friends_exp` 和 `favorite_book_exp` 参考文章 [利用 Celery 构建 Web 服务的后台任务调度模块](https://www.ibm.com/developerworks/cn/opensource/os-cn-celery-web-service/index.html)，
-而 `register_module` 包含了一个 Web 的注册案例，旨在对比传统同步的注册与使用Celery任务调度下的注册的性能差异。
+而 `register_module` 包含了一个 Web 的注册案例，对比了传统同步的注册与使用Celery任务调度下注册的性能差异。
 
 ## 性能测试
 
@@ -16,7 +16,7 @@
 我们只需要使用 Celery 提供的API就可以很轻松的实现生产者和消费者了。
 
 `register_module`使用 Flask 作为 Web 框架，选用 RabbitMQ 作为 Celery 的 Broker，其中`register`与`celery_register`接口分别展示了传统同步的注册方式与使用 Celery 的注册方式，
-相关步骤都以`time.sleep`的方式模拟。以下是两种实现的性能测试对比，测试并不十分严谨，旨在说明使用异步方式对于系统吞吐量上的提高：
+相关步骤的耗时都以`time.sleep`的方式模拟。以下是两种实现方式的性能测试对比，测试并不十分严谨，旨在说明使用异步方式对于系统吞吐量上的提高：
 
 ![](http://blog.default.nanwulife.com/%E6%9C%AA%E5%91%BD%E5%90%8D.png)
 
