@@ -25,5 +25,5 @@
 1. 安装好 Flask、Celery 与 RabbitMQ
 2. 启动 RabbitMQ 服务，使用命令 `celery -A register_module.register_tasks worker --loglevel=info`开启 Celery
 3. 运行 `register.py`，浏览器打开`http://127.0.0.1:5000/register/testUser/testEmail`显示`success`
-4. 使用 Jmeter 完成相关测试
+4. 使用 JMeter 完成相关测试
 
