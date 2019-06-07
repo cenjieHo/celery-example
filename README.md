@@ -25,7 +25,7 @@
 
 ![](http://blog.default.nanwulife.com/%E4%BC%A0%E7%BB%9F%E6%8A%98%E7%BA%BF%E5%9B%BE%20%281%29.png)
 
-## 使用方式
+## 快速开始
 
 1. 安装好 Flask、Celery 与 RabbitMQ
 2. 启动 RabbitMQ 服务，使用命令 `celery -A register_module.register_tasks worker --loglevel=info`开启 Celery
